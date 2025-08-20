@@ -3,8 +3,8 @@
 Basic Command using frappe_framwork
 
     >>Create a new bench:
-        bench init programing_bench
-        bench init frappe-bench --frappe-branch version-15 --python python3.11
+        bench init <bench_name>    # Work with Genral 
+        bench init frappe-bench --frappe-branch version-15 --python python3.11    # Work with Frappe V15 and python3.11
         
     >>Create a new bench:
         bench new-site <site_name>
@@ -34,6 +34,12 @@ Set Internet connection each tab
         sudo nano /etc/resolv.conf
         nameserver 8.8.8.8 [crel+s, ctrl+x]
 
+How to Start Mairaidb:
+
+    >>Command
+        sudo service mariadb start
+        
+
 How to install ERP Next
     
     >>Install command
@@ -45,7 +51,10 @@ How to install ERP Next
 Clone and install application
 
     >>You must install it properly. From your bench directory:
+        clone repo
         bench get-app maintainx <git_repo_url>
+
+        Install app
         bench --site your-site-name install-app maintainx
       
       

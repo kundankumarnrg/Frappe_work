@@ -54,6 +54,10 @@ How to install ERPNext on your site
     >>After this, run again:
         bench --site inventory.localhost list-apps
 
+    >>if there are any missing dependencies or errors.
+        bench doctor    # It will show if there are any missing dependencies or errors.
+
+
     
 
 

@@ -40,11 +40,20 @@ How to Start Mairaidb:
         sudo service mariadb start
         
 
-How to install ERP Next
-    
-    >>Install command
+How to install ERPNext on your site
 
-    >>Configuration
+    >>Check ERPNext app avilable or nor
+        bench --site inventory.localhost list-apps
+    
+    >>First, download the ERPNext app in your bench if you haven’t already:
+        bench get-app erpnext --branch version-15
+
+    >>Then install ERPNext on your site:
+        bench --site inventory.localhost install-app erpnext
+
+    >>After this, run again:
+        bench --site inventory.localhost list-apps
+
     
 
 
